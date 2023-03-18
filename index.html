@@ -83,11 +83,11 @@
         $(function () {
             $('form').submit(function () {
                 const name    = $('input[name="name"]').val();
-                const udetate = $('input[name="udetate"]').val();
-                const fukkin  = $('input[name="fukkin"]').val();
-                const haikin  = $('input[name="haikin"]').val();
-                const sukuwat = $('input[name="sukuwat"]').val();
-                const msg = `${name}\n${udetate}\n${fukkin}\n${haikin}\n${sukuwat}`;
+                const kana = $('input[name="kana"]').val();
+                const sex  = $('input[name="sex"]').val();
+                const birthday = $('input[name="birthday"]').val();
+                const campus  = $('input[name="campus"]').val();
+                const msg = `${name}\n${kana}\n${sex}\n${birthday}\n${campus}`;
                 sendText(msg);
                 return false;
             });
